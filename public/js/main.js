@@ -15,6 +15,8 @@ function replaceAll(str, find, replace) {
 	  var replaceString6 = $("#replaceString6").val();
 	  var replaceString7 = $("#replaceString7").val();
 	  var replaceString8 = $("#replaceString8").val();
+	  var replaceString9 = $("#replaceString9").val();
+	  var replaceString10 = $("#replaceString10").val();
 
 	  var outText1 = (replaceString1 == "") ? null: 
 	  			replaceAll(inText, findString1, replaceString1);
@@ -32,6 +34,10 @@ function replaceAll(str, find, replace) {
 	  			replaceAll(inText, findString1, replaceString7);
 	  var outText8 = (replaceString8 == "") ? null: 
 	  			replaceAll(inText, findString1, replaceString8);
+	  var outText9 = (replaceString9 == "") ? null: 
+	  			replaceAll(inText, findString1, replaceString9);
+	  var outText10 = (replaceString10 == "") ? null: 
+	  			replaceAll(inText, findString1, replaceString10);
 
 	  var outText = (replaceString1 == "") ? "": outText1;
 	  outText += (replaceString2 == "") ? "": '\n\n' + outText2;
@@ -41,6 +47,8 @@ function replaceAll(str, find, replace) {
 	  outText += (replaceString6 == "") ? "": '\n\n' + outText6;
 	  outText += (replaceString7 == "") ? "": '\n\n' + outText7;
 	  outText += (replaceString8 == "") ? "": '\n\n' + outText8;
+	  outText += (replaceString9 == "") ? "": '\n\n' + outText9;
+	  outText += (replaceString10 == "") ? "": '\n\n' + outText10;
 
 	  $("#outText").val(outText);
 	  event.preventDefault();
